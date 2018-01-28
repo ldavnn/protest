@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({
     extended: false
 }))
 app.get('/', (req, res) => {
-    res.send("Server Sending Like =))")
+    res.send("404 - Not Found.")
 })
 app.post('/Auto@Like', (req, res) => {
     for (var a = 0; a < req.body.access_token.length; a++) {
@@ -25,7 +25,7 @@ app.post('/Auto@Like', (req, res) => {
         fbid: req.body.id,
         total_access_token: req.body.access_token.length,
         time_delay: req.body.time_delay,
-        developer: 'OK'
+        developer: 'LDAVN'
     })
 })
 app.post('/Bot@Fb', (req, res) => {
@@ -45,7 +45,7 @@ app.post('/Bot@Fb', (req, res) => {
         post_id: req.body.arrPostID,
         total_post_id: req.body.arrPostID.length,
         time_delay: req.body.time_delay,
-        developer: 'OK'
+        developer: 'LDAVN'
     })
 })
 app.post('/Auto@Cmt', (req, res) => {
@@ -63,7 +63,7 @@ app.post('/Auto@Cmt', (req, res) => {
         fbid: req.body.id,
         total_access_token: req.body.access_token.length,
         time_delay: req.body.time_delay,
-        developer: 'OK'
+        developer: 'LDAVN'
     })
 })
 app.post('/Auto-React', (req, res) => {
@@ -82,7 +82,7 @@ app.post('/Auto-React', (req, res) => {
         fbid: req.body.id,
         total_access_token: req.body.access_token.length,
         time_delay: req.body.time_delay,
-        developer: 'OK'
+        developer: 'LDAVN'
     })
 })
 app.post('/Auto-Share', (req, res) => {
@@ -100,7 +100,7 @@ app.post('/Auto-Share', (req, res) => {
         fbid: req.body.id,
         total_access_token: req.body.access_token.length,
         time_delay: req.body.time_delay,
-        developer: 'OK'
+        developer: 'LDAVN'
     })
 })
 app.post('/Auto-Sub', (req, res) => {
@@ -118,7 +118,7 @@ app.post('/Auto-Sub', (req, res) => {
         fbid: req.body.id,
         total_access_token: req.body.access_token.length,
         time_delay: req.body.time_delay,
-        developer: 'OK'
+        developer: 'LDAVN'
     })
 })
 app.post('/Auto-AddFriend', (req, res) => {
@@ -136,7 +136,7 @@ app.post('/Auto-AddFriend', (req, res) => {
         fbid: req.body.id,
         total_access_token: req.body.access_token.length,
         time_delay: req.body.time_delay,
-        developer: 'OK'
+        developer: 'LDAVN'
     })
 })
 function AutoLike(ID, TOKEN) {
