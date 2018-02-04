@@ -182,7 +182,7 @@ function AutoCmt(ID, message, TOKEN){
 function in_array(needle, haystack){
     return haystack.indexOf(needle) !== -1;
 }
-var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080,
-    ip   = process.env.IP   || process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
+var port = process.env.PORT || 5000,
+    ip   = process.env.IP   || '127.0.0.1';
 app.listen(port, ip);
 console.log('Server running on http://%s:%s', ip, port);
